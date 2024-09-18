@@ -4,7 +4,7 @@ about: Create a report to help us improve
 title: ''
 labels: ''
 assignees: ''
-projects: ["lv-hyper/projects/1"]
+projects: ["lv-hyper"]
 ---
 
 **Describe the bug**
