@@ -22,7 +22,6 @@ body:
     attributes:
       label: Version
       description: What version of InfinityRPG are you playing?
-      default: "beta 1.0.0"
     validations:
       required: true
   - type: textarea
