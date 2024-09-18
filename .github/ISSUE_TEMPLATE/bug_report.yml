@@ -22,6 +22,7 @@ body:
     attributes:
       label: Version
       description: What version of InfinityRPG are you playing?
+      value: "beta v1.0.0"
     validations:
       required: true
   - type: textarea
