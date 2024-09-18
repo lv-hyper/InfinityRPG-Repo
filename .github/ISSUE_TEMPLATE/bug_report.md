@@ -4,7 +4,7 @@ about: Create a report to help us improve
 title: ''
 labels: ''
 assignees: ''
-projects: ["@InfinityRPG"]
+projects: ["lv-hyper/1"]
 ---
 
 **Describe the bug**
