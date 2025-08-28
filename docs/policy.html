@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy / 개인정보처리방침</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            margin-top: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .lang-toggle {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .lang-toggle button {
+            margin: 0 5px;
+            padding: 8px 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .lang-toggle button.active {
+            background-color: #388E3C;
+        }
+        .lang-section {
+            display: none;
+        }
+        .lang-section.active {
+            display: block;
+        }
+        a { color: #4CAF50; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Privacy Policy / 개인정보처리방침</h1>
+</header>
+
+<div class="container">
+    <div class="lang-toggle">
+        <button id="enBtn" class="active">English</button>
+        <button id="krBtn">한국어</button>
+    </div>
+
+    <div id="en" class="lang-section active">
+        <h2>English</h2>
+        <p>This privacy policy applies to the InfinityRPG app (hereafter "Application") created by level=hyper (hereafter "Service Provider").</p>
+        <p>The Application may collect information such as your device IP, pages visited, time spent, and OS used. It does not collect precise location information.</p>
+        <p>Third-party services used include Google Play Services, Google Analytics for Firebase, Firebase Crashlytics, and Unity. Collected data may be shared in an anonymized manner for service improvement.</p>
+        <p>Users can opt out by uninstalling the Application. Data will be retained while you use the app and for a reasonable time afterward. For deletion requests, contact <a href="mailto:project.infinityrpg@gmail.com">project.infinityrpg@gmail.com</a>.</p>
+        <p>The Application is not intended for children under 13. If personal information from children is discovered, it will be deleted immediately.</p>
+        <p>By using the Application, you consent to this Privacy Policy. For questions, contact <a href="mailto:project.infinityrpg@gmail.com">project.infinityrpg@gmail.com</a>.</p>
+    </div>
+
+    <div id="kr" class="lang-section">
+        <h2>한국어</h2>
+        <p>본 개인정보처리방침은 level=hyper(이하 "서비스 제공자")가 제작한 InfinityRPG 앱(이하 "애플리케이션")에 적용됩니다.</p>
+        <p>애플리케이션은 기기 IP, 방문 페이지, 사용 시간, 운영체제 정보 등을 수집할 수 있으며, 정확한 위치 정보는 수집하지 않습니다.</p>
+        <p>사용되는 제3자 서비스에는 Google Play Services, Google Analytics for Firebase, Firebase Crashlytics, Unity가 포함됩니다. 수집된 데이터는 익명화된 형태로 서비스 개선 목적으로 공유될 수 있습니다.</p>
+        <p>사용자는 앱을 삭제하여 수집을 중단할 수 있습니다. 데이터는 앱 사용 중과 합리적인 기간 동안 보관되며, 삭제 요청은 <a href="mailto:project.infinityrpg@gmail.com">project.infinityrpg@gmail.com</a>으로 연락하면 처리됩니다.</p>
+        <p>본 애플리케이션은 13세 미만 아동을 대상으로 하지 않습니다. 아동의 개인정보가 수집된 경우 즉시 삭제됩니다.</p>
+        <p>애플리케이션 사용 시 본 개인정보처리방침에 동의한 것으로 간주됩니다. 문의는 <a href="mailto:project.infinityrpg@gmail.com">project.infinityrpg@gmail.com</a>으로 연락해 주세요.</p>
+    </div>
+</div>
+
+<script>
+    const enBtn = document.getElementById('enBtn');
+    const krBtn = document.getElementById('krBtn');
+    const enSection = document.getElementById('en');
+    const krSection = document.getElementById('kr');
+
+    enBtn.addEventListener('click', () => {
+        enSection.classList.add('active');
+        krSection.classList.remove('active');
+        enBtn.classList.add('active');
+        krBtn.classList.remove('active');
+    });
+
+    krBtn.addEventListener('click', () => {
+        krSection.classList.add('active');
+        enSection.classList.remove('active');
+        krBtn.classList.add('active');
+        enBtn.classList.remove('active');
+    });
+</script>
+
+</body>
+</html>
